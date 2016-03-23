@@ -1,0 +1,17 @@
+$color-1: #263e57;
+$color-2: #ffc94e;
+$color-3: #0a2c50;
+$color-4: #fff;
+$color-5: #000;
+$color-6: #f5f6f7;
+$color-7: #25b5cd;
+$color-8: #6bbf51;
+$color-9: #1a3e62;
+$color-10: #fafafa;
+$color-11: #173554;
+$color-12: #333;
+$color-13: #eee;
+
+$wrapper-max-width: 1140px;
+$wrapper-side-margin: calc((100% - $wrapper-max-width) / 2);
+$wrapper-mobile-padding: 20px;

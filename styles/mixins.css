@@ -1,0 +1,10 @@
+/* Return the margin between the border of the viewport and the content */
+@define-mixin max-width-percentage-wrapper $percentage, $direction: left {
+  margin-$(direction): $wrapper-side-margin;
+  max-width: calc($wrapper-max-width * $percentage);
+
+  @media screen and (width <= $wrapper-max-width) {
+    margin-$(direction): 0;
+    max-width: calc(100% * $percentage);
+  }
+}

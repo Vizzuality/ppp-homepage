@@ -1,0 +1,103 @@
+.content-section {
+  .wrapper {
+    > .header {
+
+      > .title {
+        font-family: "PT Serif", serif;
+        font-size: 50px;
+        color: $color-1;
+        font-weight: 700;
+        position: relative;
+        margin: 0;
+        margin-bottom: 42px;
+
+        @media screen and (width < 725px) {
+          font-size: 40px;
+        }
+
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: -23px;
+          width: 120px;
+          height: 3px;
+          background-color: $color-2;
+        }
+
+        &.-main {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 300;
+          color: $color-4;
+          font-size: 95px;
+          line-height: 1.1;
+          letter-spacing: -2.7px;
+
+          @media screen and (width <= 768px) {
+            font-size: 60px;
+          }
+
+          @media screen and (width < 725px) {
+            font-size: 43px;
+          }
+
+          &:after {
+            content: '|';
+            display: inline;
+            position: static;
+            background-color: transparent;
+            color: $color-2;
+          }
+        }
+
+        &.-small { font-size: 40px; }
+        &.-smallmargin { margin-bottom: 25px; }
+        &.-inverse { color: $color-4; }
+
+        &.-border2:after { background-color: $color-7; }
+        &.-border3:after { background-color: $color-8; }
+      }
+
+    }
+
+    > .link {
+      display: inline-block;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $color-1;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: .4px;
+      text-decoration: none;
+
+      &.-margin { margin-bottom: 25px; }
+      &.-right { float: right; }
+    }
+
+    > .header + .link { padding-top: 12px; }
+
+    > .content {
+      font-family: "Open Sans", sans-serif;
+      font-size: 17px;
+      line-height: 28px;
+      color: $color-1;
+      margin: 0;
+
+      &.-inverse {
+        color: $color-4;
+      }
+
+      &.-margin {
+        margin-bottom: 90px;
+
+        @media screen and (width <= 768px) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+  }
+
+}

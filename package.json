@@ -1,0 +1,23 @@
+{
+  "name": "ppp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "postcss --use autoprefixer --use postcss-import --use postcss-mixins --use postcss-simple-vars --use postcss-media-minmax --use postcss-nested --use postcss-property-lookup --use postcss-hexrgba --config postcss.config.json --dir dist --watch styles/main.css styles/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "postcss-cli": "^2.5.1",
+    "postcss-hexrgba": "^0.2.0",
+    "postcss-import": "^8.0.2",
+    "postcss-media-minmax": "^2.1.1",
+    "postcss-mixins": "^4.0.1",
+    "postcss-nested": "^1.0.0",
+    "postcss-property-lookup": "^1.2.1",
+    "postcss-simple-vars": "^1.2.0"
+  }
+}

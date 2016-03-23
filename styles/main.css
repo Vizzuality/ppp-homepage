@@ -1,0 +1,25 @@
+@import "settings.css";
+@import "mixins.css";
+@import "helpers.css";
+
+@import "components/content-section.css";
+@import "components/general-button.css";
+
+@import "layouts/layout-header.css";
+@import "layouts/layout-footer.css";
+@import "layouts/layout-homepage-mission.css";
+@import "layouts/layout-homepage-problem.css";
+@import "layouts/layout-homepage-analysis.css";
+@import "layouts/layout-homepage-map.css";
+@import "layouts/layout-homepage-contact.css";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}

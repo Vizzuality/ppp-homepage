@@ -1,0 +1,61 @@
+.l-homepage-mission {
+  padding-top: 75px;
+
+  @media screen and (width <= 768px) {
+    padding-top: 30px;
+  }
+
+  .row { position: relative; }
+
+  .floatingcontainer {
+    position: absolute;
+    right: 15px;
+    top: -100px;
+    z-index: 1;
+    padding: 0 60px 50px 60px;
+    box-shadow: 0 8px 15px 0 rgba($color-5, .15);
+    background-color: $color-4;
+    overflow-x: hidden;
+
+    @media screen and (width <= 992px) {
+      position: static;
+      margin: 50px 15px 0 15px;
+    }
+
+    @media screen and (width < 768px) {
+      padding: 0 15px;
+      margin: 50px 0 0 0;
+      box-shadow: none;
+    }
+
+    > .hero {
+      width: calc(100% + 120px);
+      position: relative;
+      left: -60px;
+      margin-bottom: 45px;
+
+      @media screen and (width < 768px) {
+        width: calc(100% + 30px);
+        left: -15px;
+      }
+    }
+  }
+
+  > .imagecontainer {
+    padding: 0;
+    margin-top: 105px;
+
+    @media screen and (width <= 768px) {
+      margin-top: 50px;
+    }
+
+    > .row {
+      margin: 0;
+
+      > .wrapper {
+        padding: 0;
+        > .hero { width: 100%; }
+      }
+    }
+  }
+}

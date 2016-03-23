@@ -1,0 +1,83 @@
+.l-homepage-contact {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background-color: $color-9;
+
+  @media screen and (width <= 768px) {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+
+  @media screen and (width <= 950px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+  }
+
+  > .wrapper {
+    @mixin max-width-percentage-wrapper .5;
+    padding-right: 125px;
+
+    > .content + .content {
+      margin-top: 28px;
+    }
+
+    @media screen and (width <= 950px) {
+      max-width: 65%;
+      padding-right: 0;
+    }
+  }
+
+  .contactbox {
+    position: relative;
+    width: calc(100% - 10px);
+    padding: 50px;
+    background-color: $color-10;
+    box-shadow: 0 5px 20px 0 rgba($color-5, .2);
+
+    @media screen and (width <= 950px) {
+      margin-top: 70px;
+    }
+
+    @media screen and (width <= 768px) {
+      margin-top: 30px;
+    }
+
+    > .email {
+      width: 100%;
+      font-family: "Open Sans", sans-serif;
+      font-size: 17px;
+      line-height: 28px;
+      color: $color-12;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid rgba($color-9, .3);
+      outline: 0;
+      margin-bottom: 40px;
+      background-color: $color-10;
+    }
+
+    > .message {
+      width: 100%;
+      min-height: 170px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 17px;
+      line-height: 32px;
+      color: $color-12;
+      border: 0;
+      outline: 0;
+      background-image: repeating-linear-gradient(to bottom, transparent, transparent 30.5px, rgba($color-9, .3) 32px);
+      /* Issue with FF: https://bugzilla.mozilla.org/show_bug.cgi?id=1007064 */
+      background-attachment: local;
+      background-color: $color-10;
+    }
+
+    > .general-button {
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+    }
+  }
+}
