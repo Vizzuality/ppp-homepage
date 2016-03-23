@@ -41,6 +41,7 @@
           }
         }
 
+        > a { text-decoration: none; }
         .logo-wri        { max-width: 114px; }
         .logo-vizzuality { max-width: 105px; }
         .logo-nasa       { max-width: 65px; }

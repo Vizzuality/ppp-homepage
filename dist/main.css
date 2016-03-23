@@ -316,6 +316,9 @@
     text-align: center;
   }
 }
+.l-footer .wrapper .partners > .partner > a {
+  text-decoration: none;
+}
 .l-footer .wrapper .partners > .partner .logo-wri        {
   max-width: 114px;
 }
